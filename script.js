@@ -2,7 +2,7 @@
 	document.getElementById("myForm").addEventListner("submit",(e)=>{
 		e.preventDefault();
 		let fontsize= document.getElementById("fontsize").value;
-		let fontsize= document.getElementById("fontcolor").value;
+		let fontcolor= document.getElementById("fontcolor").value;
 		document.cookie = `fontsize${fontsize};`
 		document.cookie = `fontcolor${fontcolor};`
 		document.documentElement.style.setProperty("--fontsize", `${fontsize??16}px`);
